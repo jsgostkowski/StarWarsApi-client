@@ -1,8 +1,8 @@
 import { useQuery } from "@tanstack/react-query";
-import { useCharacters } from "../actions";
+import { actions, fetchCharacters } from "../actions";
 
 export const useFetchCharacters = () => {
-  const query = useQuery(["characters"], () => useCharacters());
+  const query = useQuery(["characters"], () => actions.fetchCharacters());
 
   return query;
 };

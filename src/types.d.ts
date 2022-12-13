@@ -1,28 +1,3 @@
-// /**
-//  * TODO: uzupełnij brakujące typy
-//  */
-
-// export type Breadcrumb = {
-//   // TODO
-// };
-
-// export interface SingleMovie {
-//   results: any;
-//   title: string;
-//   episode_id: number;
-//   opening_crawl: string;
-//   characters: string[];
-//   url: string;
-// }
-
-// export type Character = {
-//   name: string;
-//   height: number;
-//   mass: string;
-//   birth_year: string;
-//   films: string[];
-//   url: string;
-// };
 export interface Movies {
   count: number;
   next: any;
@@ -30,7 +5,7 @@ export interface Movies {
   results: Result[];
 }
 
-export interface Result {
+export interface MovieResult {
   title: string;
   episode_id: number;
   opening_crawl: string;

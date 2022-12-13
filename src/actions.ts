@@ -21,14 +21,21 @@ export const fetchMovie = async (id: string) => {
   return res.data;
 };
 
-export const useCharacters = async () => {
+export const fetchCharacters = async () => {
   const res = await apiClient.get<Character>(`/people`);
   console.log(res);
   return res.data;
 };
 
-export const useCharacter = () => {
+export const fetchCharacter = async () => {
   /**
    * TODO: ${endpoint}/people/${id}
    */
+};
+
+export const actions = {
+  fetchCharacter,
+  fetchCharacters,
+  fetchMovie,
+  fetchMovies,
 };
